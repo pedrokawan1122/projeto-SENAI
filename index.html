@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="barra_superior">
+            <img id="logo" src="imagens/logomarca_branca.png">
+            <div id="caixa_menus">
+                <div class="menus menu_ativo">Home</div>
+                <div class="menus"> <a href="https://www.google.com" target="_blank">Serviços</a>
+                </div>
+                <div class="menus">Sobre nós</div>
+                <div class="menus">Nosso time</div>
+                <div class="menus">Contato</div>
+            </div>
+        </div>
+        <div id="barra_mobile">
+            <i id="btn_abrir" onclick="abrirMenu()" class="fi fi-rr-menu-burger"></i>
+                
+        </div>
+        <div id="menu_lista">
+            <div id="btn_fechar" onclick="fecharMenu()">X</div>
+
+            <div id="caixa_menus">
+                <div class="menus menu_ativo">Home</div>
+                <div class="menus"> <a href="https://www.google.com" target="_blank">Serviços</a>
+                </div>
+                <div class="menus">Sobre nós</div>
+                <div class="menus">Nosso time</div>
+                <div class="menus">Contato</div>
+            </div>
+        </div>
+        <div id="banner">
+            <div id="conteudo_banner">
+                <span id="titulo">Educação infantil de qualidade</span>
+                <br>
+                <span id="mensagem">❤️Para cuidar do futuro das crianças, 
+                nós fazemos o melhor, somos referência 
+                no país.
+            </span>
+
+            </div>
+        </div>
+
+        <div id="nossos_servicos">
+            NOSSOS SERVIÇOS
+            <br>
+            <img src="imagens/ursinho.png" all="ursinho">
+        </div>
+
+        <div class="nossos_servicos2">
+            <div id="criancas1"></div>
+            <div id="conteudo2">
+                <h1>Desenvolvimento de habilidades</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laborum, quam maiores labore culpa consequatur atque exercitationem eveniet. Labore consectetur porro fuga! Eum voluptatibus doloremque similique eaque vel fugiat amet?
+                </p>
+            </div>
+        </div>
+
+
+        <div class="nossos_servicos2">
+            <div id="criancas2"></div>
+            <div id="conteudo3">
+                <h1>Lorem Ipsum</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque esse quasi facilis eos. Nam sunt quisquam omnis recusandae, excepturi beatae nostrum sed ipsa quo asperiores, modi fuga earum at?
+                </p>
+            </div>
+        </div>
+
+        <div id="rodape">
+            <div id="conteudo_rodape1">
+                <h1>Lorem ipsum dolor</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ullam labore est repudiandae deserunt odit iusto iure, quae impedit veritatis excepturi vero esse quasi explicabo obcaecati possimus vel? Incidunt, illo.
+            </div>
+
+            <div id="conteudo_rodape2">
+                <i class="fi fi-sr-phone-call"></i> (00)3000-0000 <br>
+                <i class="fi fi-sr-envelope"></i> contato@email.com.br <br>
+                <i class="fi fi-sr-marker"></i> Av. Beira Rio, Recife/PE <br>
+                <i class="fi fi-sr-clock-three"></i> Seg. a Sex das 08:00 às 17:00
+
+
+
+            </div>
+            <div id="conteudo_rodape3">
+                <img src="imagens/logomarca_escura.png" width="300px">
+                <br> Siga-nos nas redes sociais
+
+                <div id="redes_sociais">
+                    <i class="fi fi-brands-facebook"></i>
+                    <i class="fi fi-brands-whatsapp"></i>
+                    <i class="fi fi-brands-instagram"></i>
+                    <i class="fi fi-brands-twitter-alt"></i>
+                </div>
+            </div>
+            <div id="conteudo_rodape4">
+                Copyright 2023 / Site feito por
+                <a href="mailto:fabio@pe.docente.senai.br">Fábio Oliveira</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function abrirMenu() {
+            var div = document.getElementById('menu_lista');
+            div.classList.add("aparecer");           
+        }
+        function fecharMenu() {
+            var div = document.getElementById('menu_lista');
+            div.classList.remove("aparecer");           
+        }
+        
+        // const btn_abrir = document.getElementById('btn_abrir');
+        // const btn_fechar = document.getElementById('btn_fechar')
+        // btn_abrir.addEventListener('click', () =>{
+        //     aparecer();
+        // })
+        // btn_fechar.addEventListener('click', ()=>{
+        //     esconder();
+        // })
+
+    </script>
+</body>
+
+</html>
